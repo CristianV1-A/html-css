@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas</title>
+    <style>
+        @font-face {
+            font-family:'Orange Gummy' ;
+            src: url('fontes/Orange Gummy.otf') format('opentype'), url('fontes/Orange Gummy.ttf') format('truetype');
+            font-weight: normal ;
+            font-style: normal;
+            /*
+            Tipos de format()
+            - opentype(otf)
+            - truetype(ttf)
+            - embedded-opentype
+            - truetype-aat(Apple Advanced Typography)
+            -svg
+            */
+        }
+        body{
+            font-family:'Times New Roman', Times, serif;
+        
+        
+        }
+        h1{
+            font-family: 'Orange Gummy', Times, serif;
+            font-size: 3em;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, ea praesentium cupiditate culpa iusto in labore. Quibusdam quia natus esse error, dicta inventore fugit accusantium sequi blanditiis, minima nulla sunt?</p>
+</body>
+</html>

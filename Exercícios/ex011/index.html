@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abir esse site em varios dispositivos diferentes ou simplesmente aumente ou diminua o tamanho do seu navegador!</p>
+
+    <picture>
+       
+        <source media="(max-width:750px )" srcset="imagens/foto-pequena.png"         
+        type="image/png">
+
+        <source media="(max-width: 1050px)" srcset="Imagens/foto-media.png"
+        type="image/png">
+
+        <source media="(max-width: 1910px)" srcset="imagens/foto-grande.png" type="image/png">
+
+        <img src="Imagens/foto-meme.png" alt="Imagem grade flexivel">
+
+        
+        
+    </picture>
+    
+    <h1>Reproduzindo áudios</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio preload="metadata" autoplay controls>
+        <source src="midia/jorney-music.mp3" type="audio/mpeg">
+        <p>Infelizmente seu navegador não suporta reproduzir o arquivo de áudio. <a href="midia/jorney-music.mp3">Clique aqui</a> para baixar o arquivo.
+        </p>
+    </audio>
+    <!--Formatos suportados por nevagadores: MP3, WAV, OGG-->
+</body>
+</html>
