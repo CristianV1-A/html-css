@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<style>
+    body{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+
+    table{
+        width: 500px;
+        border-collapse: collapse;
+    }
+    td, th{
+        border: 1px solid black;
+        padding: 5px;
+    }
+    td.num{
+        text-align: right;
+    }
+
+    thead{
+        background-color: grey;
+        color: black;
+        
+    }
+    tfoot{
+        background-color: grey;
+        color: black;
+    }
+</style>
+<body>
+    <h1>Uso de tabelas grandres</h1>
+    <!--   
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            THEAD 
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    
+    
+    -->
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.319.049</td> 
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+                
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">3.858.760</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">3.783.639</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">3.679.298</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">3.424.978</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">3.382.210	</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">3.320.568</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">2.481.043</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total de abitantes</th>
+                <td class="num"><strong>203.080.756</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>
