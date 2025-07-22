@@ -9,10 +9,16 @@
     body{
         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
     }
+    caption{
+        font-size: bold;
+        background-color: lightgrey;
+        padding: 10px;
+    }
 
     table{
         width: 500px;
         border-collapse: collapse;
+        position: relative;
     }
     td, th{
         border: 1px solid black;
@@ -22,21 +28,28 @@
         text-align: right;
     }
 
-    thead{
-        background-color: grey;
-        color: black;
+    thead, tfoot{
+        background-color: rgb(66, 66, 66);
+        color: rgb(255, 255, 255);
         
     }
-    tfoot{
-        background-color: grey;
-        color: black;
+    thead{
+        top: -1px;
+        position: sticky;
+        background-color: rgb(66, 66, 66);
+
     }
+    tbody > tr:nth-child(2n){
+        background-color: lightgray;
+    }
+  
 </style>
 <body>
     <h1>Uso de tabelas grandres</h1>
     <!--   
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD 
                 TR, TD, TH
             TBODY
@@ -48,10 +61,11 @@
     -->
     
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
 
         </thead>
@@ -97,15 +111,46 @@
                 <td>Goiás</td>
                 <td class="num">2.481.043</td>
             </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">2.063.689</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">1.756.172</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">1.458.836</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">1.263.738</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">1.194.596</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">1.183.874</td>
+            </tr>
 
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de abitantes</th>
+                <th scope="row">Total de abitantes</th>
                 <td class="num"><strong>203.080.756</strong></td>
             </tr>
         </tfoot>
     </table>
-    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus id ratione similique error vel ex libero, alias nobis corporis delectus est voluptatum dolorum magni, hic, quidem consequuntur fugiat illum accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas dolore, molestias sapiente optio sunt rerum? Assumenda maiores voluptatibus voluptates blanditiis architecto quasi animi, beatae quo porro molestias odit adipisci eum? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil reprehenderit eveniet debitis fugit dolor repudiandae. Et vel voluptatem harum numquam, pariatur nam eius labore, animi itaque eos magnam quod dolore? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum, sit alias quasi odio voluptate omnis possimus, molestiae nisi minima ex numquam itaque provident magnam perspiciatis, quaerat quia id repellendus nesciunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, accusamus eveniet dicta ducimus sunt, magni reiciendis alias placeat assumenda officia incidunt aspernatur ut voluptatem, omnis error ipsum nam magnam ratione! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut odit debitis doloremque maxime minima adipisci illum vitae modi expedita. Est in qui odit, vero nesciunt architecto vitae vel repellat temporibus!</p>
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus id ratione similique error vel ex libero, alias nobis corporis delectus est voluptatum dolorum magni, hic, quidem consequuntur fugiat illum accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas dolore, molestias sapiente optio sunt rerum? Assumenda maiores voluptatibus voluptates blanditiis architecto quasi animi, beatae quo porro molestias odit adipisci eum? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil reprehenderit eveniet debitis fugit dolor repudiandae. Et vel voluptatem harum numquam, pariatur nam eius labore, animi itaque eos magnam quod dolore? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum, sit alias quasi odio voluptate omnis possimus, molestiae nisi minima ex numquam itaque provident magnam perspiciatis, quaerat quia id repellendus nesciunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, accusamus eveniet dicta ducimus sunt, magni reiciendis alias placeat assumenda officia incidunt aspernatur ut voluptatem, omnis error ipsum nam magnam ratione! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut odit debitis doloremque maxime minima adipisci illum vitae modi expedita. Est in qui odit, vero nesciunt architecto vitae vel repellat temporibus!</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus id ratione similique error vel ex libero, alias nobis corporis delectus est voluptatum dolorum magni, hic, quidem consequuntur fugiat illum accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas dolore, molestias sapiente optio sunt rerum? Assumenda maiores voluptatibus voluptates blanditiis architecto quasi animi, beatae quo porro molestias odit adipisci eum? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil reprehenderit eveniet debitis fugit dolor repudiandae. Et vel voluptatem harum numquam, pariatur nam eius labore, animi itaque eos magnam quod dolore? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum, sit alias quasi odio voluptate omnis possimus, molestiae nisi minima ex numquam itaque provident magnam perspiciatis, quaerat quia id repellendus nesciunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, accusamus eveniet dicta ducimus sunt, magni reiciendis alias placeat assumenda officia incidunt aspernatur ut voluptatem, omnis error ipsum nam magnam ratione! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut odit debitis doloremque maxime minima adipisci illum vitae modi expedita. Est in qui odit, vero nesciunt architecto vitae vel repellat temporibus!</p>
+
+
+
 </body>
 </html>
