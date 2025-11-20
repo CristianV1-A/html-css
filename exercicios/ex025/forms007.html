@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de forms</title>
+</head>
+<body>
+    <form action="cadastro.js" method="get" autocomplete="on"></form>
+        <p>
+            <label for="idest">Estado: </label>
+            <select name="estado" id="idest">
+                <option value="" selected>--- Escolha uma Opção ---</option>
+                <optgroup label="Região Norte">
+                    <option value="AM">Amazonas</option>
+                    <option value="RR">Roraima</option>
+                    <option value="AC">Acre</option>
+                </aptgroup>
+                <optgroup label="Região Sudeste">
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="idprof">Profissão: </label>
+            <input type="text" name="profissao" id="idprof" list="lstprof">
+            <datalist id="lstprof">
+                <option >Administrador</option>
+                <option >Contador</option>
+                <option >Desenvolvedor</option>
+                <option >Professor</option>
+            </datalist>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    
+</body>
+</html>
