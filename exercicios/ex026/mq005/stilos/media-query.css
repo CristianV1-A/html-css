@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/*todas as demais medias*/
+/* Typical Device Breakpoints
+    Pequenas Telas:
+    Grande Telas:
+    Tablet: 576px-992px
+    Celular: <576px
+    Desktop: >992px
+
+
+
+*/
+
+@media screen and (min-width: 576px) {
+    span#burguer{
+        display: none;
+    }
+
+    menu{
+        display: block;
+    }
+
+    menu > ul > li{
+        display: inline-block;
+        
+        
+    }
+
+    main{
+        width: 567px;
+    }
+}
